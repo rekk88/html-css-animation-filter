@@ -157,5 +157,40 @@
     height: 20px;
 }
 
+.ex-12-button:hover .ex-12-top-white{
+    /* background-color: turquoise; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: top 2s linear 0s 1;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    /* background-color: tomato; */
+    animation: bottom 2s linear 0s 1;
+
+}
+
+@keyframes top {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 70%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes bottom {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: 70%;
+    }
+    100%{
+        right: 20%;
+    }
+}
 /*-------------*/
 
